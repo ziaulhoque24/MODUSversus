@@ -110,6 +110,13 @@
 
 
 @media (min-width: 1200px) {
+    .choose_slider_items .next_item {
+        left: 823px;
+    
+    }  
+    .choose_slider_items .current_item {
+        left: 368px;
+    }
 
 
 }
