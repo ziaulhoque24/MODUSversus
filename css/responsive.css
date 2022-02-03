@@ -1,0 +1,230 @@
+/*===================================
+        for extra small device
+ ===================================*/
+@media (min-width: 0px) and (max-width: 575.98px) {
+    .choose_slider_items .previous_hidden {
+        display: block;
+        width: 290px;
+        height: 203px;
+        top: 40px;
+        left: -5px;
+    }
+
+    .choose_slider_items .next_hidden {
+        width: 290px;
+        height: 203px;
+        top: 40px;
+        left: 525px;
+    }
+    .choose_slider_items .current_item {
+        width: 290px;
+        height: 203px;
+        top: 0;
+        left: 86px;
+    }
+    .choose_slider_items .next_item {
+        width: 240px;
+        height: 129px;
+        top: 40px;
+        left: 229px;
+    }
+    .choose_slider_items .previous_item {
+        width: 240px;
+        height: 129px;
+        top: 40px;
+        left: -27px;
+    }
+    .line {
+        width: 70%;
+    }
+    .slidehead {
+        padding-bottom: 78px;
+    }
+    .container5 {
+        padding-top: 82px;
+    }
+}
+
+/*===================================
+        for small device
+ ===================================*/
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .choose_slider_items .previous_item {
+        width: 293px;
+        height: 214px;
+        top: 40px;
+        left: -102px;
+    }
+    .choose_slider_items .current_item {
+        width: 456px;
+        height: 295px;
+        top: 0;
+        left: 30px;
+    }
+    .choose_slider_items .next_item {
+        width: 293px;
+        height: 214px;
+        top: 40px;
+        left: 327px;
+    }
+    .line {
+        width: 70%;
+    }
+    .slidehead {
+        padding-bottom: 72px;
+    }
+    .container5 {
+        padding-top: 132px;
+    }
+
+}
+
+/*===================================
+        for medium device
+ ===================================*/
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    .line {
+        width: 75%;
+    }
+    .container5 {
+        padding-top: 132px;
+    }
+}
+
+/*===================================
+        for large device
+ ===================================*/
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+}
+
+/*===================================
+        for extra large device
+ ===================================*/
+
+
+@media (min-width: 1200px) {
+
+
+}
+/*===================================
+        header responsive css
+ ===================================*/
+@media screen and (max-width: 991.98px) {
+.headerright {
+    float: none;
+}
+    .logo-div{
+        float: none;
+    }
+    .menu ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .menu{
+        margin-right: 0px;
+        display: none;
+    }
+    .menu ul>li a {
+        padding: 5px 8px;
+
+    }
+    .togglebtn {
+        text-align: left;
+        font-size: 25px;
+        color: white;
+        padding: 20px 0px;
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+
+    }
+    .togglebtn > span{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .togglebtn > span:last-child {
+        display: none;
+    }
+    .menu a:hover {
+        box-shadow: none;
+    }
+    .home {
+        box-shadow: none;
+    }
+    .protfolio-content {
+        position: relative;
+        top: 4px;
+    }
+
+    .protfolio-content::after{
+        content: '';
+        width: 0px;
+        height: 0px;
+      border: 0px solid transparent;
+    }
+    .protfoliobtn>a::before {
+        content: '';
+        width: 0px;
+        height: 0px;
+        border-bottom: 0px solid transparent;
+        border-left: 0px solid transparent;
+        border-right: 0px solid transparent;
+    }
+    .protfolio-content {
+        padding: 5px;
+        width: 100%;
+    }
+    .view-more button {
+        font-size: 15px;
+    }
+    .service {
+        width: 80%;
+        height: 280px;
+        margin: 0 0 47px 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .client {
+        text-align: center;
+    }
+    .client-say {
+        margin: auto;
+    }
+
+    .choose {
+        text-align: center;
+    }
+    .choose > ul > li  {
+        text-align: left;
+    }
+    .semi {
+        text-align: center;
+    }
+  .fluid5 {
+        padding-bottom: 66px;
+    }
+    .nexticon3 , .prveicon3 {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+    }
+    .row7> div:not(:last-child){
+        padding-bottom: 20px;
+        border-bottom: 1px solid #7f8c8c;
+    }
+    .row7> div:not(:first-child) {
+        padding-top: 20px;
+    }
+    .row7> div {
+        margin-left: 20px;
+    }
+
+}

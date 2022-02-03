@@ -1,0 +1,250 @@
+/* fixme: rename choose_slider_items to animated-slider or something */
+
+.choose_slider_items li {
+	position: relative;
+	list-style: none;
+	display: none;
+	text-align: center;
+
+
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.choose_slider_items .previous_hidden {
+	display: block;
+	width: 365px;
+	height: 255px;
+	transform: scale(0.6,0.6);
+	-moz-transform: scale(0.6,0.6);
+	-ms-transform: scale(0.6,0.6);
+	-webkit-transform: scale(0.6,0.6);
+	opacity: 0.0;
+	position: absolute;
+	top: 40px;
+	left: -5px;
+	z-index: 0;
+	background: #c1c7c8;
+	border-radius: 10px;
+}
+
+.choose_slider_items .next_hidden {
+	display: block;
+	width: 365px;
+	height: 255px;
+	transform: scale(0.6,0.6);
+	-moz-transform: scale(0.6,0.6);
+	-ms-transform: scale(0.6,0.6);
+	-webkit-transform: scale(0.6,0.6);
+	opacity: 0.0;
+	position: absolute;
+	top: 40px;
+	left: 525px;
+	z-index: 0;
+	background: #c1c7c8;
+	border-radius: 10px;
+}
+
+.choose_slider_items .previous_item {
+	display: block;
+	width: 365px;
+	height: 255px;
+	transform: scale(0.8,0.8);
+	-moz-transform: scale(0.8,0.8);
+	-ms-transform: scale(0.8,0.8);
+	-webkit-transform: scale(0.8,0.8);
+	opacity: 0.65;
+	position: absolute;
+	top: 40px;
+	left: 95px;
+	z-index: 0;
+	background: #c1c7c8;
+	border-radius: 10px;
+}
+
+.choose_slider_items .next_item {
+	display: block;
+	width: 365px;
+	height: 255px;
+	transform: scale(0.8,0.8);
+	-moz-transform: scale(0.8,0.8);
+	-ms-transform: scale(0.8,0.8);
+	-webkit-transform: scale(0.8,0.8);
+	opacity: 0.65;
+	position: absolute;
+	top: 40px;
+	left: 635px;
+	z-index: 0;
+	background: #c1c7c8;
+	border-radius: 10px;
+}
+
+
+
+
+.choose_slider_items .current_item {
+	width: 565px;
+	height: 360px;
+	display: block;
+	position: absolute;
+	transform: scale(1,1);
+	-moz-transform: scale(1,1);
+	-ms-transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	top: 0;
+	left: 262px;
+	z-index: 100;
+	background: #c1c7c8;
+	border-radius: 10px;
+}
+.sliderheadbar {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background: #c1c7c8;
+	border-radius: 10px;
+}
+.sliderheadbarbtn {
+	width: 25px;
+	height: 8px;
+	border-radius: 2px;
+	text-align: right;
+	background: white;
+	display: block;
+	margin: 16px;
+	position: absolute;
+	right: 0;
+}
+.sliderheadbar p {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	width: 100px;
+	height: 40px;
+}
+.sliderheadbar span{
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background: white;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 11px;
+}
+/*  responsive slider */
+@media screen and (max-width: 991.98px) {
+	.choose_slider_items .previous_hidden {
+		display: block;
+		width: 365px;
+		height: 255px;
+		top: 40px;
+		left: -5px;
+	}
+
+	.choose_slider_items .next_hidden {
+		width: 365px;
+		height: 255px;
+		top: 40px;
+		left: 525px;
+	}
+
+    .choose_slider_items .previous_item {
+        width: 293px;
+        height: 214px;
+        top: 40px;
+        left: -18px;
+    }
+
+    .choose_slider_items .next_item {
+        width: 293px;
+        height: 214px;
+        top: 40px;
+        left: 440px;
+    }
+
+
+	.choose_slider_items .current_item {
+        width: 456px;
+        height: 295px;
+        top: 0;
+        left: 133px;
+    }
+}
+
+/* newwwwwwwwwwwwwwwwwwwwwwwwwwwwwww  */
+
+.semi-donut{
+	--percentage: 0;
+	--fill: #76c7c0;
+	width: 125px;
+	height: 63px;
+	position: relative;
+	color: #fff;
+	font-size: 10px;
+	font-weight: 600;
+	overflow: hidden;
+	color: var(--fill);
+	display: inline-block;
+	align-items: flex-end;
+	justify-content: center;
+	box-sizing : border-box;
+	margin: 5px;
+
+}
+
+.semi-donut::after{
+	 content: '';
+	 width: 125px;
+	 height: 125px;
+	 border:15px solid;
+	 border-color : #76c7c0 #76c7c0 var(--fill) var(--fill);
+	 position: absolute;
+	 border-radius: 50%;
+	 left: 0;
+	 top: 0;
+	 box-sizing : border-box;
+	 transform: rotate( calc( 1deg * ( -45 + var(--percentage) * 1.8 ) ) );
+	 animation : fillAnimation 1s ease-in;
+ }
+.semi-donut span {
+	position: absolute;
+	top: 25px;
+	right: 42px;
+	color: #7f8c8c;
+	font-size: 34px;
+}.semi-donut a {
+	 position: absolute;
+	 top: 30px;
+	 right: 42px;
+	 color: #7f8c8c;
+	 font-size: 34px;
+ }
+.SUSPENDISSE div {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 16px;
+}
+
+@keyframes fillAnimation{
+	0%{transform : rotate(-45deg);}
+	50%{transform: rotate(135deg);}
+}
+/* =================================
+      start section 6 css & Slideer 3
+===================================== */
+.slider3 {
+	height: 90px;
+	width: 100%;
+}
+.slide3 {
+	margin-right: 15px;
+	display: inline-block;
+
+}
+.slide3:nth-child(6) {
+	margin-right: 0px;
+}
